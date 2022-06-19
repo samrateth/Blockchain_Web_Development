@@ -1,0 +1,25 @@
+Error 1:
+npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR!
+npm ERR! While resolving: blockchain-poll@0.0.0
+npm ERR! Found: jasmine-core@3.5.0
+npm ERR! node_modules/jasmine-core
+npm ERR!   dev jasmine-core@"~3.5.0" from the root project
+npm ERR!
+npm ERR! Could not resolve dependency:
+npm ERR! peer jasmine-core@">=3.8" from karma-jasmine-html-reporter@1.7.0
+npm ERR! node_modules/karma-jasmine-html-reporter
+npm ERR!   dev karma-jasmine-html-reporter@"^1.4.2" from the root project
+npm ERR!
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force, or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+
+THIS ERROR WAS SOLVED BY
+Open the folder you create with ng new and open the package.json file. 
+In devDependencies change the version of "jasmine-core" 3.6.0 to 3.8.0 
+and "karma-jasmine-html-reporter" from 1.7.0 to 1.6.0 and save it. 
+Then go back to Terminal and go to your project and run npm install. 
+Now it works and you can run ng serve.
